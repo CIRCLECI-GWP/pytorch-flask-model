@@ -6,9 +6,7 @@ from utils import get_bytes_from_image, download_image
 class TestDenseNetModel(unittest.TestCase):
     def test_cat_image_inference(self):
         
-        # image_url = 'https://i.imgur.com/t5S6rkz.jpg'
-        # image_url = 'https://i.imgur.com/wYTCtRu.jpeg'
-        image_url = 'https://i.imgur.com/4vwkJDa.jpeg'
+        image_url = 'https://i.imgur.com/t5S6rkz.jpg'
 
         download_image(image_url, '/tmp/image.jpg')
         img_bytes = get_bytes_from_image('/tmp/image.jpg')

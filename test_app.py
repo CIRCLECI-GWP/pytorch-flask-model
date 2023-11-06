@@ -8,9 +8,7 @@ class TestPredictionsAPI(unittest.TestCase):
         self.client = self.app.test_client
 
         request = {
-            # 'image_url': 'https://i.imgur.com/t5S6rkz.jpg'
-            # 'image_url': 'https://i.imgur.com/wYTCtRu.jpeg'
-            'image_url': 'https://i.imgur.com/4vwkJDa.jpeg'
+            'image_url': 'https://i.imgur.com/t5S6rkz.jpg'
         }
 
         response = self.client().post('/predict', data=request)
